@@ -1,0 +1,35 @@
+{
+  "name": "jeuxamateurs-graphql",
+  "version": "1.0.0",
+  "description": "GraphQL API plugged into the old MySQL database of JeuxAmateurs (French website about amateur games)",
+  "keywords": [
+    "indie game",
+    "amateur game",
+    "news",
+    "reviews",
+    "graphql"
+  ],
+  "homepage": "http://jeuxamateurs.fr",
+  "license": "MIT",
+  "author": "Alexis Launay <yorunohikage@gmail.com> (http://yorunohikage.fr)",
+  "repository": "YoruNoHikage/jeuxamateurs-graphql",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon ./index.js --exec node"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-graphql": "^0.5.4",
+    "graphql": "^0.7.2",
+    "graphql-tag": "^0.1.16",
+    "graphql-tools": "^0.8.0",
+    "mysql-promise": "^3.1.0",
+    "queryize": "^2.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^3.1.3",
+    "ip": "^1.1.4",
+    "nodemon": "^1.11.0"
+  },
+  "engines" : { "node" : ">=4" }
+}
